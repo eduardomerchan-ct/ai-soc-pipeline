@@ -1,6 +1,6 @@
 import time
 import logging
-
+import faker
 def generate_normal(): #this will generate normal logs for use
 
 
