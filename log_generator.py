@@ -5,7 +5,6 @@ from faker import Faker
 
 
 
-
 #def generate_normal(): #this will generate normal logs for use
 
 
