@@ -16,7 +16,7 @@ def download_logs():
         container = client.get_container_client(DAILY_LOGS_CONTAINER)
         blob_name = f"{today}.txt"
         blob = container.get_blob_client(blob_name)
-        contents = blob.download_blob().readall().decode("utf-8")
+        contents = blob.download_blob().readall().decode("utf-8", errors="ignore")
         print(f"[AI-SOC] Downloaded {blob_name} from daily-logs")
         return contents
     except Exception as error:
